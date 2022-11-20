@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <title>News site</title>
+    <style>
+    * {
+    box-sizing: border-box;
+    }
+
+    /* Create three equal columns that floats next to each other */
+    .column {
+    float: left;
+    text-align: center;
+    width: 32.33%;
+    padding: 10px;
+    height: 300px;
+    background-color: whitesmoke;
+    margin: 0.5%;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    } 
+
+    h1 {
+        font-size: large;
+    }
+
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 960px) {
+    .column {
+        width: 46%;
+        margin-left: 2.5%;
+    }
+    }
+    </style>
+  </head>
+  <body>
+    <header style="background-color: whitesmoke; padding: 10px; margin: 0.5%; font-size: large; font-weight: bold;">
+      <p>News site</p>
+    </header>
+    <main>
+      <div class="row">
+        <div class="column">
+            <h1>Item heading 1</h1>
+            <p>
+                Lorem ipsum dolor sit amet. Sed architecto rerum sed nisi suscipit ad fugit quibusdam et velit rerum est quod nihil? 
+                Aut nostrum veritatis qui atque quia qui deserunt omnis est corrupti consequatur est voluptas dignissimos.
+                Id quia ipsa aut quasi quod sed ipsa exercitationem qui quia quos et fuga amet ea deserunt autem sed maxime veniam.
+            </p>
+        </div>
+        <div class="column">
+            <h1>Item heading 2</h1>
+            <p>
+                Lorem ipsum dolor sit amet. Sed architecto rerum sed nisi suscipit ad fugit quibusdam et velit rerum est quod nihil? 
+                Aut nostrum veritatis qui atque quia qui deserunt omnis est corrupti consequatur est voluptas dignissimos.
+                Id quia ipsa aut quasi quod sed ipsa exercitationem qui quia quos et fuga amet ea deserunt autem sed maxime veniam.
+            </p>
+        </div>
+        <div class="column">
+            <h1>Item heading 3</h1>
+            <p>
+                Lorem ipsum dolor sit amet. Sed architecto rerum sed nisi suscipit ad fugit quibusdam et velit rerum est quod nihil? 
+                Aut nostrum veritatis qui atque quia qui deserunt omnis est corrupti consequatur est voluptas dignissimos.
+                Id quia ipsa aut quasi quod sed ipsa exercitationem qui quia quos et fuga amet ea deserunt autem sed maxime veniam.
+            </p>
+        </div>
+      </div>
+    </main>
+    <footer style="background-color: whitesmoke; padding: 10px; margin: 0.5%; font-size: large; font-weight: bold;">News site</footer>
+  </body>
+</html>
